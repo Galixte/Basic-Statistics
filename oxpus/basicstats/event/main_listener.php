@@ -74,10 +74,6 @@ class main_listener implements EventSubscriberInterface
 		if ($this->user->data['user_type'] == USER_FOUNDER)
 		{
 			$ext_main_link = $this->helper->route('basicstats_controller');
-			if (strpos($ext_main_link, 'app.' . $this->php_ext . '/basicstats') === false)
-			{
-				$ext_main_link = str_replace('/basicstats', '/app.' . $this->php_ext . '/basicstats', $ext_main_link);
-			}
 
 			$this->template->assign_vars(array(
 				'U_BASIC_STATS' => $ext_main_link,

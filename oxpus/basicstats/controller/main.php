@@ -61,7 +61,7 @@ class main
 	public function handle($view = '')
 	{
 		// Define the ext path
-		$mode		= $this->request->variable('mode', 'd');
+		$mode		= $this->request->variable('mode', 'm');
 		$s_month	= $this->request->variable('s_month', '');
 		$s_year		= trim($this->request->variable('s_year', ''));
 
