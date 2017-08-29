@@ -28,7 +28,7 @@ class release_1_0_1 extends \phpbb\db\migration\migration
 	{
 		return array(
 			// Set the current version
-			array('config.add', array('basicstats_version', $this->ext_version)),
+			array('config.update', array('basicstats_version', $this->ext_version)),
 		);
 	}
 }
